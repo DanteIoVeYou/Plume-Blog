@@ -1,0 +1,110 @@
+/* 清除浏览器默认样式 */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* 给整体页面设置一个高度，让页面和浏览器一样高 */
+html,
+body {
+    /* 设置页面高度和浏览器窗口一样高 */
+    height: 100%;
+
+    /* 设置一个背景图片 */
+    background-image: url(../img/bgimage.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* 给导航栏设置样式 */
+.nav {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(240, 255, 255, 0.4);
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.nav img {
+    /* 给图片设置尺寸 */
+    width: 40px;
+    height: 40px;
+    /* 让图片变圆 */
+    border-radius: 50%;
+}
+
+.nav .title {
+    padding-left: 10px;
+}
+
+.space {
+    height: 100%;
+    width: 50px;
+}
+
+.nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 0 10px;
+
+}
+
+/* 版心的样式 */
+.container {
+    width: 1000px;
+    height: calc(100% - 40px);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .left {
+    height: 100%;
+    width: 200px;
+}
+
+.container .right {
+    height: 100%;
+    width: 795px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.card img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.card h3 {
+    text-align: center;
+    padding: 5px;
+}
+
+.card a {
+    display: block;
+    text-decoration: none;
+    color: green;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.card .counter {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
